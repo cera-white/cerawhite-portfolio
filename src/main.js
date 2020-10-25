@@ -1,9 +1,27 @@
 import Vue from 'vue';
+import { BootstrapVue } from 'bootstrap-vue';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faLinkedinIn,
+  faTumblr,
+  faTwitch,
+  faYoutube,
+  faFacebookF,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
 import router from './router';
 import store from './store';
 
 Vue.config.productionTip = false;
+
+// Install BootstrapVue
+Vue.use(BootstrapVue);
+
+// FontAwesome Icons
+library.add(faLinkedinIn, faTumblr, faTwitch, faYoutube, faFacebookF, faGithub);
+Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 new Vue({
   router,

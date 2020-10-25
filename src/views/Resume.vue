@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <h1>Cera White's Game Design Portfolio</h1>
+  <div class="resume">
+    <h1>Resume</h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Home',
+  name: 'Resume',
   components: {
   },
 };

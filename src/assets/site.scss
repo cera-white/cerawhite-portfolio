@@ -1,0 +1,62 @@
+@import "./variables";
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+svg.svg-inline--fa {
+  width: 1em !important;
+  height: 1em !important;
+  transition: all 0.15s ease-in;
+}
+
+.bg-lighter-dark {
+  background: lighten(theme-color("dark"), 10%);
+  color: lighten(theme-color("dark"), 30%);
+}
+
+.hover-bg-primary:hover,
+.hover-bg-primary:focus {
+  background: theme-color("primary");
+  color: lighten(theme-color("primary"), 40%);
+}
+
+.hover-bg-secondary:hover,
+.hover-bg-secondary:focus {
+  background: theme-color("secondary");
+  color: lighten(theme-color("secondary"), 40%);
+}
+
+.hover-bg-success:hover,
+.hover-bg-success:focus {
+  background: theme-color("success");
+  color: lighten(theme-color("success"), 40%);
+}
+
+.hover-bg-danger:hover,
+.hover-bg-danger:focus {
+  background: theme-color("danger");
+  color: lighten(theme-color("danger"), 40%);
+}
+
+.hover-bg-warning:hover,
+.hover-bg-warning:focus {
+  background: theme-color("warning");
+  color: lighten(theme-color("warning"), 40%);
+}
+
+.hover-bg-info:hover,
+.hover-bg-info:focus {
+  background: theme-color("info");
+  color: lighten(theme-color("info"), 40%);
+}
+
+.hover-bg-light:hover,
+.hover-bg-light:focus {
+  background: theme-color("light");
+  color: lighten(theme-color("light"), 40%);
+}
+
+.hover-bg-dark:hover,
+.hover-bg-dark:focus {
+  background: theme-color("dark");
+  color: lighten(theme-color("dark"), 40%);
+}
