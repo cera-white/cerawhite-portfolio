@@ -55,6 +55,11 @@ export default {
           category: 'games',
         },
         {
+          name: 'renpy',
+          title: 'Ren\'Py Visual Novel',
+          category: 'games',
+        },
+        {
           name: 'unity',
           title: 'Unity',
           category: 'games',

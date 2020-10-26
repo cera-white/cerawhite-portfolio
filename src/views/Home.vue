@@ -20,18 +20,26 @@
     <about class="d-none d-md-block"></about>
 
     <skills></skills>
+
+    <projects></projects>
+
+    <contact></contact>
   </div>
 </template>
 
 <script>
 import About from '@/components/About.vue';
 import Skills from '@/components/Skills.vue';
+import Projects from '@/components/Projects.vue';
+import Contact from '@/components/Contact.vue';
 
 export default {
   name: 'Home',
   components: {
     About,
     Skills,
+    Projects,
+    Contact,
   },
 };
 </script>

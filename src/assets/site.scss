@@ -2,6 +2,10 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 
+html {
+  background: theme-color("dark");
+}
+
 svg.svg-inline--fa {
   width: 1em !important;
   height: 1em !important;
@@ -68,4 +72,20 @@ svg.svg-inline--fa {
 .hover-bg-dark:focus {
   background: theme-color("dark");
   color: lighten(theme-color("dark"), 40%);
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
 }
