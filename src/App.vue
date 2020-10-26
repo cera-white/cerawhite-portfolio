@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
     <b-navbar toggleable="sm" type="dark" variant="dark">
       <b-navbar-brand to="/">Cera White</b-navbar-brand>
 
@@ -11,15 +7,17 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item :to="{ path: '/'+ '#about' }">About</b-nav-item>
-          <b-nav-item :to="{ path: '/'+ '#skills' }">Skills</b-nav-item>
-          <b-nav-item :to="{ path: '/'+ '#projects' }">Projects</b-nav-item>
-          <b-nav-item :to="{ path: '/'+ '#contact' }">Contact</b-nav-item>
+          <b-nav-item to="/about">About</b-nav-item>
+          <b-nav-item to="/skills">Skills</b-nav-item>
+          <b-nav-item to="/projects">Projects</b-nav-item>
+          <b-nav-item to="/contact">Contact</b-nav-item>
           <b-nav-item to="/resume">Resume</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+
     <router-view/>
+
     <footer class="bg-dark text-white pb-5 pt-5">
       <div class="container-fluid">
         <div class="d-flex flex-column justify-content-center align-items-center">
@@ -29,7 +27,7 @@
               v-b-tooltip.hover :title="link.title">
               <a :href="link.url" target="_blank">
                 <font-awesome-icon :icon="['fab', link.icon]"
-                  class="social-icon bg-lighter-dark rounded-circle p-2 fa-3x"
+                  class="social-icon bg-lighter-dark rounded-circle p-2 fa-3x default-transition"
                   :class="`hover-bg-${link.color}`">
                 </font-awesome-icon>
               </a>

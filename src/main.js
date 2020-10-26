@@ -8,6 +8,7 @@ import {
   faYoutube,
   faFacebookF,
   faGithub,
+  faVuejs,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
@@ -20,7 +21,7 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 
 // FontAwesome Icons
-library.add(faLinkedinIn, faTumblr, faTwitch, faYoutube, faFacebookF, faGithub);
+library.add(faLinkedinIn, faTumblr, faTwitch, faYoutube, faFacebookF, faGithub, faVuejs);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 new Vue({

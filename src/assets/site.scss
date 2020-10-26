@@ -5,7 +5,10 @@
 svg.svg-inline--fa {
   width: 1em !important;
   height: 1em !important;
-  transition: all 0.15s ease-in;
+}
+
+.default-transition {
+  transition: all 0.2s ease-in;
 }
 
 .bg-lighter-dark {
@@ -52,7 +55,13 @@ svg.svg-inline--fa {
 .hover-bg-light:hover,
 .hover-bg-light:focus {
   background: theme-color("light");
-  color: lighten(theme-color("light"), 40%);
+  color: darken(theme-color("light"), 20%);
+}
+
+.hover-bg-darker-light:hover,
+.hover-bg-darker-light:focus {
+  background: darken(theme-color("light"), 10%);
+  color: darken(theme-color("light"), 20%);
 }
 
 .hover-bg-dark:hover,
