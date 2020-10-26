@@ -9,11 +9,6 @@
           Hi! I'm <span class="font-weight-bold text-success">Cera White</span>,<br />
           <strong>game designer</strong> and <strong>programmer</strong>.
         </h2>
-
-        <p class="contact mt-3">
-          Got an interesting project? Send me a message at
-          <a href="mailto:cwhite@anigrams.org">cwhite@anigrams.org</a>
-        </p>
       </div>
     </div>
 

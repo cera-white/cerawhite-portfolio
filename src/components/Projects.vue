@@ -7,7 +7,7 @@
         <div class="project-grid row justify-content-center">
           <div class="project-box col-4 mb-4 p-0 mr-3 position-relative"
             v-for="project in projects" :key="project.name">
-            <router-link :to="{ path: '/details/' + project.name }">
+            <a :href="project.url" target="_blank">
               <img class="d-block w-100" :alt="project.title"
                 :src="require(`../assets/projects/${project.name}.jpg`)">
 
@@ -17,7 +17,7 @@
                   <p>{{ project.description }}</p>
                 </div>
               </div>
-            </router-link>
+            </a>
           </div>
         </div>
       </div>

@@ -53,7 +53,7 @@
           </div>
 
           <div class="row justify-content-center align-items-center">
-            <b-button type="submit" variant="danger">Send Message</b-button>
+            <b-button type="submit" variant="danger" :disabled="submitDisabled">Send Message</b-button>
           </div>
         </b-form>
       </div>
@@ -72,12 +72,47 @@ export default {
         subject: '',
         message: '',
       },
+      submitDisabled: false,
     };
   },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
+    onSubmit(event) {
+      event.preventDefault();
+
+      this.submitDisabled = true;
+
+      const requestOptions = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': 'https://anigrams.org',
+          'Access-Control-Allow-Headers': '*',
+          'Access-Control-Allow-Credentials': 'true',
+          Vary: 'Origin',
+        },
+        body: JSON.stringify({
+          Name: this.form.name,
+          Email: this.form.email,
+          Message: this.form.message,
+        }),
+      };
+
+      fetch('https://anigrams.org/Portfolio', requestOptions)
+        .then(() => {
+          this.form = {
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          };
+
+          this.submitDisabled = false;
+
+          this.$bvToast.toast('Your message has been sent.', {
+            title: 'Success!',
+            autoHideDelay: 5000,
+          });
+        });
     },
   },
 };
