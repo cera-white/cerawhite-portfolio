@@ -3,7 +3,7 @@
     <div class="container pt-5 pb-5">
       <div class="position-relative">
         <b-button class="position-absolute top-0 right-0 text-white" variant="info"
-          href="http://anigrams.org/downloads/CeraWhiteResume.pdf" target="_blank">
+          href="/downloads/CeraWhiteResume.pdf" target="_blank">
           Download PDF
         </b-button>
         <h2 class="font-weight-bold mb-4">CERA A. WHITE</h2>
@@ -14,15 +14,25 @@
       <div class="text-left">
         <h3 class="mb-4">SKILLS</h3>
         <ul>
-          <li>Technical experience with Visual Studio, C#, ASP.NET, SQL, HTML, JavaScript, and developing web applications.</li>
-          <li>Careful attention to detail, with the ability to easily catch and troubleshoot errors as they arise during development.</li>
-          <li>Skilled at understanding client needs and finding solutions through research, creativity, and independent thinking.</li>
+          <li>Technical experience with Visual Studio, C#, Unity, and developing web applications and game prototypes.</li>
+          <li>Careful attention to detail, with the ability to troubleshoot and formulate solutions to problems as they arise.</li>
+          <li>Skilled at understanding user needs and finding solutions through research, creativity, and independent thinking.</li>
           <li>Eager for new knowledge and experiences, with the ability to learn and adapt to new skills quickly.</li>
         </ul>
 
         <hr class="mt-5 mb-5" />
 
         <h3 class="mb-4">EDUCATION</h3>
+
+        <h4>Introduction to Game Design</h4>
+        <p>CG Spectrum</p>
+        <ul>
+          <li>
+            Game Design Basics: systems and mechanics, how to deconstruct games to better understand how they were designed,
+            and how to design and prototype my own games.
+          </li>
+          <li>Expected graduation February 6, 2021.</li>
+        </ul>
 
         <h4>Application Development</h4>
         <p>Centriq Training</p>
@@ -76,8 +86,8 @@
             Supported and worked with business users and product management to understand, analyze, and develop solutions to solve client-driven requirements.
           </li>
           <li>
-            Utilized knowledge of a full range of technologies to implement intelligent UI/UX design, add functionality through a robust service-based
-            architecture, and support efficient database operations.
+            Utilized knowledge of a full range of technologies to implement intelligent UI/UX design, added functionality through a robust service-based
+            architecture, and supported efficient database operations.
           </li>
         </ul>
 

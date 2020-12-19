@@ -22,10 +22,9 @@
       </p>
 
       <p>
-        Looking to get back to my roots in game design, I started taking classes at CG Spectrum, where I'm
+        Looking to get back to my roots in game design, I've been taking classes at CG Spectrum, where I'm
         learning the fundamentals of game design from industry professionals and getting practical experience
-        designing and prototyping my own games. I'm currently in the market for a level/world or technical designer
-        position in the greater Seattle, WA area.
+        designing and prototyping my own games.
       </p>
     </div>
   </div>
