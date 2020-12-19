@@ -12,9 +12,9 @@
                 :src="require(`../assets/projects/${project.name}.jpg`)">
 
               <div class="project-overlay position-absolute w-100 h-100 top-0 left-0 p-3 align-middle text-dark" :class="`bg-${project.color}`">
-                <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                  <h3>{{ project.title }}</h3>
-                  <p>{{ project.description }}</p>
+                <div class="d-lg-flex flex-column justify-content-center align-items-center w-100 h-100">
+                  <h3 class="d-none d-lg-block">{{ project.title }}</h3>
+                  <p class="d-none d-md-block">{{ project.description }}</p>
                 </div>
               </div>
             </a>
