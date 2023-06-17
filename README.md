@@ -1,4 +1,6 @@
-# Cera White's Game Desgin Portfolio
+# Cera White's Game Design Portfolio
+
+![Social Preview](./social_preview.png)
 
 This repository contains the source code for the following website:
 
