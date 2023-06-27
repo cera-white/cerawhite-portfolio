@@ -5,8 +5,9 @@
 
       <div class="container">
         <p>
-          If you like what you see, or if you would be interested in discussing possible employment opportunities,
-          please contact me to schedule an interview. Thank you for your interest!
+          Are you ready to take your online presence to the next level?
+          Take the first step towards your dream website today by requesting a free estimate using the form below.
+          We'll get back to you within 1-2 business days.
         </p>
 
         <b-form @submit="onSubmit">
@@ -53,7 +54,7 @@
           </div>
 
           <div class="row justify-content-center align-items-center">
-            <b-button type="submit" variant="danger" :disabled="submitDisabled">Send Message</b-button>
+            <b-button type="submit" variant="danger" :disabled="submitDisabled">Request Free Estimate</b-button>
           </div>
         </b-form>
       </div>

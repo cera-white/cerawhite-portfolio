@@ -7,18 +7,32 @@ export default new Vuex.Store({
   state: {
     projects: [
       {
+        name: 'whitesuncrafts',
+        color: 'primary',
+        title: 'White Sun Crafts',
+        description: 'An e-commerce website for a small business selling handmade jewelry.',
+        url: 'https://whitesuncrafts.anigrams.org',
+      },
+      {
+        name: 'anigrams',
+        color: 'success',
+        title: 'Anigrams.org',
+        description: 'The original website for Anigrams Productions, featuring games and other projects.',
+        url: 'https://anigrams.org',
+      },
+      {
+        name: 'anigramssupport',
+        color: 'warning',
+        title: 'Anigrams Support',
+        description: 'An ticket-tracking application designed to keep track of bugs and issues in Anigrams apps.',
+        url: 'https://support.anigrams.org',
+      },
+      {
         name: 'memoirsofanangel',
         color: 'info',
         title: 'Memoirs of an Angel (2010)',
         description: 'A full-length game made with Ren\'Py, a Python-based visual novel engine.',
-        url: 'http://anigrams.org/Projects/Details/1',
-      },
-      {
-        name: 'memoirscharactercreator',
-        color: 'primary',
-        title: 'The Memoirs Character Creator',
-        description: 'A browser-based dress up game designed and exported with GameMaker: Studio.',
-        url: 'http://anigrams.org/Projects/Details/2',
+        url: 'https://anigrams.itch.io/memoirs-of-an-angel-2010',
       },
     ],
   },

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-navbar toggleable="sm" type="dark" variant="dark">
-      <b-navbar-brand to="/">Cera White</b-navbar-brand>
+      <b-navbar-brand to="/">Anigrams Productions, LLC</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -12,7 +12,6 @@
           <b-nav-item to="/skills">Skills</b-nav-item>
           <b-nav-item to="/projects">Projects</b-nav-item>
           <b-nav-item to="/contact">Contact</b-nav-item>
-          <b-nav-item to="/resume">Resume</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -27,7 +26,7 @@
               class="d-inline-block mr-2" :class="link.name"
               v-b-tooltip.hover :title="link.title">
               <a :href="link.url" target="_blank">
-                <span class="visually-hidden">{{ link.title }}</span>
+                <span class="sr-only">{{ link.title }}</span>
                 <font-awesome-icon :icon="['fab', link.icon]"
                   class="social-icon bg-lighter-dark rounded-circle p-2 fa-3x default-transition"
                   :class="`hover-bg-${link.color}`">
@@ -35,7 +34,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright">&copy; {{ currentYear }} Cera White. All rights reserved.</p>
+          <p class="copyright">&copy; {{ currentYear }} Anigrams Productions, LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -50,46 +49,32 @@ export default {
     return {
       socialLinks: [
         {
-          name: 'linked-in',
-          icon: 'linkedin-in',
-          color: 'primary',
-          url: 'https://www.linkedin.com/in/cera-white-284a6041',
-          title: 'View my professional profile on Linked In',
-        },
-        {
           name: 'tumblr',
           icon: 'tumblr',
           color: 'info',
-          url: 'http://anigrams-games.tumblr.com/',
-          title: 'Check out my blog where I support indie game devs',
+          url: 'http://anigrams-productions.tumblr.com/',
+          title: 'Check out our blog where we support indie game devs',
         },
         {
           name: 'twitch',
           icon: 'twitch',
           color: 'success',
           url: 'http://www.twitch.tv/anigrams/profile',
-          title: 'Watch me play and review cool games on Twitch',
+          title: 'Watch us play and review cool games on Twitch',
         },
         {
           name: 'youtube',
           icon: 'youtube',
           color: 'danger',
-          url: 'https://www.youtube.com/channel/UCODp-QC2dsOn_3HJ32TfsIQ',
+          url: 'https://www.youtube.com/@anigramsproductions',
           title: 'Visit the official Anigrams YouTube channel',
         },
         {
-          name: 'facebook',
-          icon: 'facebook-f',
-          color: 'warning',
-          url: 'https://www.facebook.com/cera.white.94',
-          title: 'Take a peek into my life outside of programming',
-        },
-        {
-          name: 'github',
-          icon: 'github',
-          color: 'primary',
-          url: 'https://github.com/anigrams-productions',
-          title: 'See what code projects I\'ve been working on',
+          name: 'itch-io',
+          icon: 'itch-io',
+          color: 'info',
+          url: 'https://anigrams.itch.io/',
+          title: 'Play our games on itch.io',
         },
       ],
     };

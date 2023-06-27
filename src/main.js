@@ -9,6 +9,7 @@ import {
   faFacebookF,
   faGithub,
   faVuejs,
+  faItchIo,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
@@ -21,7 +22,7 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 
 // FontAwesome Icons
-library.add(faLinkedinIn, faTumblr, faTwitch, faYoutube, faFacebookF, faGithub, faVuejs);
+library.add(faLinkedinIn, faTumblr, faTwitch, faYoutube, faFacebookF, faGithub, faVuejs, faItchIo);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 new Vue({
