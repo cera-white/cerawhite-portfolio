@@ -63,7 +63,7 @@
 
 <script>
 export default {
-  name: 'Contact',
+  name: 'ContactSection',
   data() {
     return {
       form: {

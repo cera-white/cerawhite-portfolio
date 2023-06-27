@@ -29,7 +29,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'Projects',
+  name: 'ProjectsSection',
   computed: {
     ...mapGetters([
       'projects',

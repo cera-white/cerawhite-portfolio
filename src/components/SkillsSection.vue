@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: 'Skills',
+  name: 'SkillsSection',
   data() {
     return {
       category: 'all',

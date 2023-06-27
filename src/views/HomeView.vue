@@ -12,29 +12,29 @@
       </div>
     </div>
 
-    <about class="d-none d-md-block"></about>
+    <about-section class="d-none d-md-block"></about-section>
 
-    <skills></skills>
+    <skills-section></skills-section>
 
-    <projects></projects>
+    <projects-section></projects-section>
 
-    <contact></contact>
+    <contact-section></contact-section>
   </div>
 </template>
 
 <script>
-import About from '@/components/About.vue';
-import Skills from '@/components/Skills.vue';
-import Projects from '@/components/Projects.vue';
-import Contact from '@/components/Contact.vue';
+import AboutSection from '@/components/AboutSection.vue';
+import SkillsSection from '@/components/SkillsSection.vue';
+import ProjectsSection from '@/components/ProjectsSection.vue';
+import ContactSection from '@/components/ContactSection.vue';
 
 export default {
-  name: 'Home',
+  name: 'HomeView',
   components: {
-    About,
-    Skills,
-    Projects,
-    Contact,
+    AboutSection,
+    SkillsSection,
+    ProjectsSection,
+    ContactSection,
   },
 };
 </script>

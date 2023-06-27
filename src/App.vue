@@ -27,6 +27,7 @@
               class="d-inline-block mr-2" :class="link.name"
               v-b-tooltip.hover :title="link.title">
               <a :href="link.url" target="_blank">
+                <span class="visually-hidden">{{ link.title }}</span>
                 <font-awesome-icon :icon="['fab', link.icon]"
                   class="social-icon bg-lighter-dark rounded-circle p-2 fa-3x default-transition"
                   :class="`hover-bg-${link.color}`">

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
-import Resume from '../views/Resume.vue';
+import Home from '../views/HomeView.vue';
+import Resume from '../views/ResumeView.vue';
 
 Vue.use(VueRouter);
 
@@ -19,22 +19,22 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../components/About.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '../components/AboutSection.vue'),
   },
   {
     path: '/skills',
     name: 'Skills',
-    component: () => import(/* webpackChunkName: "skills" */ '../components/Skills.vue'),
+    component: () => import(/* webpackChunkName: "skills" */ '../components/SkillsSection.vue'),
   },
   {
     path: '/projects',
     name: 'Projects',
-    component: () => import(/* webpackChunkName: "projects" */ '../components/Projects.vue'),
+    component: () => import(/* webpackChunkName: "projects" */ '../components/ProjectsSection.vue'),
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import(/* webpackChunkName: "contact" */ '../components/Contact.vue'),
+    component: () => import(/* webpackChunkName: "contact" */ '../components/ContactSection.vue'),
   },
 ];
 

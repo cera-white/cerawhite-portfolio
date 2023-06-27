@@ -142,7 +142,7 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Resume',
+  name: 'ResumeView',
   components: {
   },
 };
